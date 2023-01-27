@@ -1,0 +1,49 @@
+@import './Colors.scss';
+
+.about.section-padding{
+    padding-top: 100px;
+
+    .row{
+        grid-gap: 1rem;
+        justify-content: center;
+
+        .about-left{
+            max-width: 35%;
+    
+            .about-img{
+                border-radius: 10px;
+            }
+        }
+        .about-right{
+            h4{
+                font-weight: 400;
+                font-size: 1.1rem;
+            }
+
+            p{
+                margin-top: 2rem;
+                font-weight: lighter;
+                font-size: 0.9rem;
+            }
+
+            .social-icons{
+                margin-top: 1.5rem;
+                display: flex;
+                gap: 1.8rem;
+                .social-icon i{
+                    color: $black;
+                    font-size: 1.3rem;
+                }
+            }
+
+            .about-btn{
+                display: flex;
+                gap: 1rem;
+                margin-top: 1.5rem;
+            }
+        }
+        
+    }
+
+
+}

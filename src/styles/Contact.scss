@@ -1,0 +1,60 @@
+@import './Colors.scss';
+
+.contact{
+    position: relative;
+
+    .intro.section-padding{
+        padding-top: 50px;
+        color: $white;
+    }
+
+    .container-fluid{
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        z-index: -1;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../../public/images/contact_img.jpg');
+    }
+
+    form{
+        text-align: center;
+    }
+
+    label{
+        color: $white;
+    }
+
+    .form-control{
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        font-weight: lighter;
+        border-bottom: 1px solid $white;
+        
+        &::placeholder{
+            color: $white; 
+        }
+
+        &:focus
+        {
+            background-color: transparent;
+            box-shadow: none;
+            color: $white;
+        }
+
+    }
+
+    button{
+        margin: 1rem 0;
+
+        i{
+        padding-left: 0.5rem;
+        }
+    }
+
+
+    
+}

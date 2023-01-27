@@ -1,0 +1,38 @@
+@import './Colors.scss';
+
+.counter{
+    position: relative;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../public/images/counter_img.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .counter-card{
+        padding: 1.5rem;
+    }
+
+    i{
+        color: $blue;
+        font-size: 2rem;
+    }
+
+    h3{
+        color: $white;
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    h4{
+        color: $white;
+        font-size: 1.1rem;
+        font-weight: lighter;
+    }
+}

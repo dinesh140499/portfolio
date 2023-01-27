@@ -1,0 +1,37 @@
+@import './Colors.scss';
+
+.services{
+    background-color: $white-dark;
+
+    .service-card{
+        background-color: $white;
+        padding: 70px 37px 46px;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        border-radius: 3px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
+        i{
+            color: $blue;
+            font-size: 2.2rem;
+            opacity: 0.8;
+        }
+
+        .service-heading{
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .desc{
+            margin-top: 1.2rem;
+            font-size: 0.9rem;
+            font-weight: lighter;
+        }
+
+        &:hover{
+
+            transform: translateY(-10px);
+        }
+    }
+}

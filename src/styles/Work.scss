@@ -1,0 +1,60 @@
+@import "./Colors.scss";
+
+.work_card {
+  position: relative;
+
+  .overlay-head {
+    height: 0%;
+    width: 70%;
+    background-color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: all 0.3s linear;
+
+    .overlay {
+      background-color: $white;
+      position: absolute;
+      top: 200%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      transition: all 0.4s linear;
+
+      h4 {
+        font-size: 1rem;
+        font-weight: lighter;
+      }
+
+      .icons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+
+        .icon {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $blue;
+          color: $white;
+          border-radius: 2px;
+          padding: 1.2rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+.work_card:hover .overlay-head{
+    height: 70%;
+    opacity: 0.9;
+}
+
+.work_card:hover .overlay{
+    top: 50%;
+}

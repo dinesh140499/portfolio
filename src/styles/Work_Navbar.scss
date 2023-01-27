@@ -1,0 +1,57 @@
+@import "./Colors.scss";
+
+.work_navbar {
+
+  .intro{
+    padding-bottom: 0;
+  }
+
+  .navbar-nav{
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+
+  z-index: 99;
+  .nav-item .nav-link {
+    color: $black;
+    font-weight: 900;
+    position: relative;
+    cursor: pointer;
+
+    &:before{
+        content: '';
+        width: 0%;
+        height: 1%;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: all 0.3s linear;
+        color: $black !important;
+
+    }
+
+    &:hover{
+        color: $black !important;
+    }
+    &:hover::before{
+        width: 100%;
+    }
+  }
+}
+
+@media (max-width: 574px) {
+  .work_navbar .navbar-nav{
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  .exp-card-two::before{
+    left: -10%;
+  }
+  .exp-card-two::after{
+    left: -15%;
+  }
+}

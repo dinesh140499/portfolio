@@ -1,0 +1,41 @@
+@import './Colors.scss';
+
+.owl-theme .item .carousel-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.owl-theme{
+    .item{
+        padding: 2rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .carousel-para{
+        color: $white;
+        margin-top: 1rem;
+    }
+    h4{
+        font-weight: bold;
+        color: $white;
+    }
+
+    i{
+        color: $blue;
+        font-weight: bold;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background-color: #000;
+        z-index: -1;
+    }
+}

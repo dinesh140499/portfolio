@@ -1,0 +1,30 @@
+@import './Colors.scss';
+
+.footer{
+    .container-fluid{
+        background-color: black;
+        
+        .row{
+            padding: 2rem 0;
+        }
+        p{
+            text-align: center;
+            color: $white;
+            span{
+                color: $blue;
+            }
+        }
+
+        .social-icon{
+            list-style: none;
+            text-align: center;
+            gap: 1rem;
+            display: flex;
+            justify-content: center;
+            a{
+                color: white;
+                text-decoration: dotted;
+            }
+        }
+    }
+}

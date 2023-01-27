@@ -1,0 +1,77 @@
+@import "./Colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  line-height: 30px;
+}
+
+.btn {
+  padding: 0.8rem 1.1rem !important;
+  border: none !important;
+  font-size: 0.9rem !important;
+  font-weight: lighter !important;
+}
+
+.btn-blue {
+  background-color: $blue !important;
+  color: $white !important;
+}
+
+.btn-dark {
+  background-color: $black;
+
+  &:hover {
+    background-color: $blue !important;
+  }
+}
+
+.intro {
+  padding-bottom: 2rem;
+  font-weight: 600;
+}
+
+
+
+@media (max-width: 768px) {
+    .about.section-padding .row .about-left {
+        max-width: 100% !important;
+    }
+    
+    .timeline .exp-1::before{
+      left: 75% !important;
+    }
+    .timeline .exp-1::after{
+      left: 80% !important;
+    }
+}

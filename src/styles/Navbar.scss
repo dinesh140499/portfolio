@@ -1,0 +1,65 @@
+@import "./Colors.scss";
+
+.navbar {
+  transition: 0.3s ease;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  .logo {
+    max-width: 70%;
+    filter: brightness(0) invert(1);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-left: 1.2rem;
+    font-weight: bolder;
+    color: $white;
+    font-size: 0.9rem;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.navbar.active-scroll {
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s linear;
+  background-color: $white;
+
+  .logo {
+    filter: none;
+  }
+  .nav-link {
+    color: $black;
+  }
+  // .navbar-nav .nav-link.active{
+  //     color: $blue !important;
+  // }
+
+  // .nav-link:focus, .nav-link:hover{
+  //     color: $blue !important;
+
+  // }
+}
+.navbar.active-scroll .nav-link:focus {
+  color: $blue;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: $blue !important;
+}
+
+@media (max-width: 769px) {
+  .navbar .navbar-toggler {
+    background-color: $white;
+    border: none;
+    outline: none;
+  }
+
+}
+
+

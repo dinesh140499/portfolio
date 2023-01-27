@@ -1,0 +1,18 @@
+@import './Colors.scss';
+
+.address{
+    text-align: center;
+    i{
+        color: $blue;
+        font-size: 2rem;
+    }
+
+    h4{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    p{
+        max-width: 15rem;
+        margin: auto;
+    }
+}

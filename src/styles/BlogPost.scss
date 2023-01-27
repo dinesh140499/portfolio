@@ -1,0 +1,49 @@
+@import "./Colors.scss";
+
+.blog {
+  .blog-post {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear;
+
+    img {
+      transition: all 0.3s linear;
+    }
+    i {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    span {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      padding: 0 0.5rem;
+    }
+    h4 {
+      text-transform: capitalize;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    .btn-blog {
+      color: white;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      border: none;
+      font-weight: lighter;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.blog-post:hover img {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 769px) {
+  .blog .blog-post{
+    padding: 1.5rem;
+  }
+}
